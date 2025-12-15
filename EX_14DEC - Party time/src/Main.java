@@ -17,17 +17,10 @@ public class Main {
         String[] energy = {"yes", "no"};
         //Create a 'do-while' loop to perform the actions as long as the value for hour is correct
         do {
-            //Set condition to check if the hour value is between 6 and 24
-            if (hour > 6.0 && hour <= 24.0) {
-                //Display the message for hour value between 6 and 24
+            //Set condition to check if the hour value greater than 6
+            if (hour > 6.0) {
+                //Display the message for hour value greater than 6
                 System.out.print("It's too late to party, find something else to do!");
-                //Stop and exit the loop
-                break;
-            }
-            //Set condition for hour value greater than 24
-            if (hour > 24.0) {
-                //Display error message
-                System.out.print("Invalid input.\n");
                 //Stop and exit the loop
                 break;
             }
@@ -43,17 +36,10 @@ public class Main {
                 hour = sc.nextDouble();
                 //Added sc.nextLine() to consume the leftover character from the buffer
                 sc.nextLine();
-                //Set condition to check if the hour value is between 6 and 24
-                if (hour > 6.0 && hour <= 24.0) {
-                    //Display the message for hour value between 6 and 24
+                //Set condition to check if the hour value is greater than 6
+                if (hour > 6.0) {
+                    //Display the message for hour value greater than 6
                     System.out.print("It's too late to party, find something else to do!");
-                    //Stop and exit the loop
-                    break;
-                }
-                //Set condition for hour value greater than 24
-                if (hour > 24.0) {
-                    //Display error message
-                    System.out.print("Invalid input.\n");
                     //Stop and exit the loop
                     break;
                 }
