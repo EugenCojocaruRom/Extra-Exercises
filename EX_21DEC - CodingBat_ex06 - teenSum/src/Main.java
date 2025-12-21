@@ -7,11 +7,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         //Display label x for the first number
         System.out.print("x = ");
-        //Declare variable n of type int and read it from the keyboard
+        //Declare variable x of type int and read it from the keyboard
         int x = sc.nextInt();
         //Display label y for the first number
         System.out.print("y = ");
-        //Declare variable n of type int and read it from the keyboard
+        //Declare variable y of type int and read it from the keyboard
         int y = sc.nextInt();
 
         //Method for calculating the sum of x and y
