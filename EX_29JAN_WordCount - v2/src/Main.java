@@ -45,7 +45,7 @@ public class Main {
     //Define method for counting how many times each word appears in the text
     static Map<String, Integer> wordsUsageCount(String text) {
         //Declare variable of type Map with key of type String and value of type int, and set it as a HashMap
-        Map<String, Integer> counter = new HashMap<>();
+        Map<String, Integer> counter = new LinkedHashMap<>();
         //Loop through each word from the text, calling the 'words' method
         for (String word : words(text)) {
             //Have each word converted to lowercase
