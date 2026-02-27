@@ -1,12 +1,12 @@
 public class Caine extends Animal {  // Câinele ESTE un Animal
     Zgarda zgarda;
-    String name;
+    String nume;
 
     public Caine(String name) {
-        this.name = name;
+        super.nume = name;
     }
 
-    public void latre() {
+    public void latra() {
         System.out.println("HAM HAM!");
     }
 
@@ -16,11 +16,12 @@ public class Caine extends Animal {  // Câinele ESTE un Animal
 
     public void afiseazaZgarda() {
         if (this.zgarda == null) {
-            System.out.println("Cainele " + name + " nu are zgarda.");
+            System.out.println("Cainele " + super.nume + " nu are zgarda.");
         }
         else {
-            System.out.println("Cainele " + name + " are zgarda " + this.zgarda.afiseaza());
+            System.out.println("Cainele " + super.nume + " are zgarda " + this.zgarda.afiseaza());
         }
     }
+
 }
 
