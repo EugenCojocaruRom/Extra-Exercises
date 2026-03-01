@@ -15,7 +15,7 @@ public class Animal {
     }
 
     protected void afiseazaDieta(Dieta dieta) {
-        System.out.println(nume + " -> " +dieta.afiseazaDieta());
+        System.out.println(nume + " -> " + dieta.afiseazaDieta());
     }
 
 }
