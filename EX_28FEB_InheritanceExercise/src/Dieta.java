@@ -11,6 +11,7 @@ public class Dieta {
     }
 
     public String afiseazaDieta() {
-        return this.tipHrana + ", " + this.portiiPeZi + ", " + this.restrictii;
+        return "Tip hrana: " + this.tipHrana + "\n\tPortii zilnice: " + this.portiiPeZi
+                + "\n\tRestrictii alimentare: " + this.restrictii;
     }
 }

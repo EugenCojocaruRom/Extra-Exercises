@@ -18,5 +18,10 @@ public class Animal {
         System.out.println(nume + " -> " + dieta.afiseazaDieta());
     }
 
+    @Override
+    public String toString() {
+        return nume;
+    }
+
 }
 

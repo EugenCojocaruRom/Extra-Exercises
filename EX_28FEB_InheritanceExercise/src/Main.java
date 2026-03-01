@@ -9,6 +9,7 @@ public class Main {
         //Definire pisici
         Pisica pufi = new Pisica("Pufi");
         Pisica jerry = new Pisica("Jerry");
+        Pisica spot = new Pisica("Spot");
 
         //Definire zgarzi
         Zgarda zgarda1 = new Zgarda("neagra", "de piele");
@@ -33,6 +34,7 @@ public class Main {
         //Definire dieta pisica
         Dieta dietaPisica1 = new Dieta("mancare uscata", 4, "soareci");
         Dieta dietaPisica2 = new Dieta("mancare umeda", 3, "plante de camera");
+        Dieta dietaPisica3 = new Dieta("pateu cu ficat", 2, "masline");
 
         //Setare dieta per caine
         rex.setDieta(dietaCaine1);
@@ -42,6 +44,7 @@ public class Main {
         //Setare dieta per pisica
         pufi.setDieta(dietaPisica2);
         jerry.setDieta(dietaPisica1);
+        spot.setDieta(dietaPisica3);
 
         //Actiuni zgarda
         System.out.println("<====== Zgarda =======>");
@@ -64,6 +67,19 @@ public class Main {
         max.afiseazaDieta(dietaCaine3);
         pufi.afiseazaDieta(dietaPisica1);
         jerry.afiseazaDieta(dietaPisica2);
+        spot.afiseazaDieta(dietaPisica3);
+
+        //Camera
+        System.out.println("<====== Camera =======>");
+        Animal[] animale1 = {rex, pufi, pluto};
+        Animal[] animale2 = {max, jerry, spot};
+        Camera camera1 = new Camera(1, 2, "MaxiPet", animale1);
+        Camera camera2 = new Camera(2, 1, "Animax", animale2);
+        System.out.println(camera1);
+        camera1.afiseazaAnimale();
+        System.out.println(camera2);
+        camera2.afiseazaAnimale();
+
 
 
 
